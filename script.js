@@ -7,13 +7,13 @@ const portfolioConfig = {
 
     name: "ABS",
 
-    email: "yourmail@gmail.com",
+    email: "hussainoffcl2525@gmail.com",
 
-    whatsapp: "919999999999",
+    whatsapp: "919786917869",
 
     social: {
 
-        github: "https://github.com/",
+        github: "https://github.com/dashboard",
 
         linkedin: "https://linkedin.com/",
 
