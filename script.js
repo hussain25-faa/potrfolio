@@ -59,15 +59,15 @@ const projects = [
 
 
     {
-        title: "Modern Business Website",
+        title: "Cafe management system",
 
         category: "Website",
 
         description:
-            "A premium responsive business website designed to create a strong digital presence and generate new customers.",
+            "A premium responsive cafe business website designed to create a strong digital presence and generate new customers.",
 
         image:
-            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+            "images/cafe.jpg",
 
         technologies: [
             "HTML",
