@@ -1,4 +1,70 @@
 /* =========================================================
+   PAGE LOAD / REFRESH FIX
+========================================================= */
+
+if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+}
+
+/* Always start from Home when the page is refreshed */
+window.addEventListener("load", () => {
+    if (window.location.hash) {
+        history.replaceState(
+            null,
+            "",
+            window.location.pathname + window.location.search
+        );
+    }
+
+    window.scrollTo(0, 0);
+});
+/* =========================================================
+   FAST NAVIGATION SCROLL
+========================================================= */
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+    link.addEventListener("click", function (e) {
+
+        const targetId = this.getAttribute("href");
+
+        if (!targetId || targetId === "#") return;
+
+        const target = document.querySelector(targetId);
+
+        if (!target) return;
+
+        e.preventDefault();
+
+        const navbar = document.querySelector(".navbar");
+
+        const navbarHeight = navbar
+            ? navbar.offsetHeight
+            : 0;
+
+        const targetPosition =
+            target.getBoundingClientRect().top +
+            window.pageYOffset -
+            navbarHeight -
+            10;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth"
+        });
+
+        /* Remove #projects / #about / etc. from URL */
+        history.replaceState(
+            null,
+            "",
+            window.location.pathname + window.location.search
+        );
+
+    });
+
+});
+
+/* =========================================================
    PORTFOLIO CONFIGURATION
    EDIT THESE VALUES
 ========================================================= */
@@ -13,7 +79,7 @@ const portfolioConfig = {
 
     social: {
 
-        github: "https://github.com/dashboard",
+        /*github: "https://github.com/dashboard",*/
 
         linkedin: "https://linkedin.com/",
 
@@ -328,9 +394,9 @@ function renderProjects() {
                                 target="_blank"
                             >
 
-                                GitHub
+                                
 
-                                <i class="bi bi-github"></i>
+                               
 
                             </a>
 
