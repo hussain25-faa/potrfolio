@@ -118,7 +118,7 @@ const projects = [
         ],
 
         live:
-            "https://sain.pythonanywhere.com/",
+            "https://dental-bay-phi.vercel.app/",
 
         
     },
