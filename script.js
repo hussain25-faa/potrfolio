@@ -83,7 +83,7 @@ const portfolioConfig = {
 
         linkedin: "https://linkedin.com/",
 
-        instagram: "https://instagram.com/"
+        instagram: "https://www.instagram.com/shsolutions.in?stkn=ODU3djlqN2I5bmtn"
 
     }
 
