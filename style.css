@@ -153,31 +153,51 @@ select {
 /* LOGO */
 
 .logo {
-
     display: flex;
-
     align-items: center;
-
     gap: 9px;
-
     font-family: "Space Grotesk", sans-serif;
-
     font-weight: 700;
-
-    font-size: 18px;
-
-    letter-spacing: -.5px;
+    color: var(--text);
+    text-decoration: none;
 }
 
-.logo > span:last-child > span {
-    color: var(--accent);
-}
-
-.logo-symbol {
-
-    color: var(--accent);
-
+.logo-mark {
+    display: grid;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    flex: 0 0 48px;
+    border: 1px solid #9b7cff;
+    border-radius: 10px;
+    color: #fff;
     font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.logo-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    line-height: 1;
+}
+
+.logo-name {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -.7px;
+}
+
+.logo-tagline {
+    color: #a99aff;
+    font-family: Inter, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .15px;
+    text-transform: uppercase;
 }
 
 
@@ -1218,18 +1238,34 @@ select {
         );
 }
 
-.image-number {
+.about-image-brand {
 
     position: absolute;
+    right: 18px;
+    bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 12px;
+    background: rgba(9, 9, 12, .82);
+    border: 1px solid rgba(155, 124, 255, .6);
+    backdrop-filter: blur(8px);
+}
 
-    right: 20px;
-    bottom: 20px;
+.about-image-brand .logo-mark {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+    border-radius: 8px;
+    font-size: 14px;
+}
 
-    font-family: "Space Grotesk";
+.about-image-brand .logo-name {
+    font-size: 15px;
+}
 
-    font-size: 12px;
-
-    letter-spacing: 3px;
+.about-image-brand .logo-tagline {
+    font-size: 8px;
 }
 
 .about-content {
@@ -2639,12 +2675,19 @@ select {
         padding: 12px 0;
     }
 
-    .logo {
+    .logo-mark {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+        font-size: 15px;
+    }
+
+    .logo-name {
         font-size: 16px;
     }
 
-    .logo-symbol {
-        font-size: 15px;
+    .logo-tagline {
+        font-size: 8px;
     }
 
     .menu-button {
