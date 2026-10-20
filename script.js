@@ -411,11 +411,7 @@ function renderProjects() {
                             </a>
 
 
-                            <a
-                                href="${project.github}"
-                                target="_blank"
-                            >
-
+                           
                                 
 
                                
