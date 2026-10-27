@@ -172,7 +172,7 @@ const projects = [
 
 
     {
-        title: "Inventory Dashboard",
+        title: "Framecut",
 
         category: "Web Application",
 
@@ -180,16 +180,16 @@ const projects = [
             "An interactive inventory dashboard for tracking products, stock levels, sales and business activity.",
 
         image:
-            "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+            "images/edit.png",
 
         technologies: [
-            "Python",
-            "SQL",
-            "Bootstrap"
+            "HTML",
+            "CSS",
+            "JavaScript",
         ],
 
         live:
-            "#",
+            "https://editor-portfolio-henna.vercel.app/",
 
        
     },
