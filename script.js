@@ -177,7 +177,7 @@ const projects = [
         category: "Web Application",
 
         description:
-            "An interactive inventory dashboard for tracking products, stock levels, sales and business activity.",
+            "A premium video editing portfolio showcasing cinematic edits, social media reels, and promotional content through immersive visuals, smooth animations, and responsive design.",
 
         image:
             "images/edit.png",
@@ -204,17 +204,19 @@ const projects = [
             "A responsive online shopping experience with product presentation, categories and customer-focused design.",
 
         image:
-            "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80",
+            "images/zaaya.jpg",
 
         technologies: [
             "HTML",
             "CSS",
             "JavaScript",
+            "python",
             "SQL"
+            
         ],
 
         live:
-            "#",
+            "https://dress-e-com-psi.vercel.app/",
 
        
     }
